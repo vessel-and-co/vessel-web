@@ -1,5 +1,12 @@
 import type { Metadata } from "next";
+import { Archivo } from "next/font/google";
 import "./globals.css";
+
+const archivo = Archivo({
+  variable: "--font-archivo",
+  subsets: ["latin"],
+  weight: ["500", "600"],
+});
 
 const description =
   "Vessel Perfumes. Perfumería en Paraguay. Fragancias seleccionadas con una experiencia de compra cuidada.";
@@ -23,7 +30,7 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="es">
+    <html lang="es" className={archivo.variable}>
       <body>{children}</body>
     </html>
   );
