@@ -1,0 +1,8 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-green: #143324;
+  --color-brand-gold: #c59f55;
+  /* Blanco de marca: no se usa en la holding page actual, reservado para uso futuro. */
+  --color-brand-white: #ffffff;
+}
