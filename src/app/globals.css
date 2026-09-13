@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --breakpoint-lg: 900px;
+
+  --color-brand-green: #143324;
+  --color-brand-green-700: #1c4230;
+  --color-brand-green-900: #0e241a;
+  --color-brand-green-950: #0a1a12;
+  --color-brand-gold: #c59f55;
+  --color-brand-gold-soft: #d8bd86;
+  --color-brand-white: #ffffff;
+
+  --color-paper: #f6f1e6;
+  --color-paper-2: #efe8d8;
+
+  --color-ink: #20281f;
+  --color-ink-2: #5b5a4e;
+  --color-ink-3: #8a8778;
+
+  --color-line: #e0d7c3;
+  --color-line-2: #cabfa3;
+
+  --color-wa: #1f7a54;
+  --color-wa-hover: #186344;
+
+  --radius-sm: 6px;
+  --radius-md: 8px;
+  --radius-lg: 14px;
+
+  --font-sans: var(--font-vastago), ui-sans-serif, system-ui, sans-serif;
+  --font-serif: var(--font-fraunces), Georgia, serif;
+}
+
+/* Fondos decorativos del diseno de referencia (placeholders hasta tener fotografia real). */
+.hero-surface {
+  background: radial-gradient(
+    120% 100% at 78% 40%,
+    #fbf7ee 0%,
+    var(--color-paper) 60%
+  );
+}
+
+.axis-surface {
+  background: linear-gradient(180deg, #fbf7ee, var(--color-paper-2));
+}
+
+.thumb-surface {
+  background: linear-gradient(160deg, #fbf7ee, var(--color-paper-2));
+}
