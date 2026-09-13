@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import {
   CollectionExplorer,
   type CollectionItem,
-} from "@/app/coleccion/__components/CollectionExplorer";
+} from "./__components/CollectionExplorer";
 import { ProductCard } from "@/components/ProductCard";
 import { getCollectionProducts } from "@/lib/sanity/product.query";
 import { getSettings } from "@/lib/sanity/settings.query";

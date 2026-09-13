@@ -5,7 +5,7 @@ import { notFound } from "next/navigation";
 import {
   ProductGallery,
   type GalleryImage,
-} from "@/app/perfumes/[slug]/__components/ProductGallery";
+} from "./__components/ProductGallery";
 import { PreorderButton } from "@/components/PreorderButton";
 import { ProductStatusBadge } from "@/components/ProductStatusBadge";
 import { WhatsAppButton } from "@/components/WhatsAppButton";

@@ -1,9 +1,6 @@
 import type { Metadata } from "next";
 
-import {
-  FaqAccordion,
-  type FaqItem,
-} from "@/app/preguntas/__components/FaqAccordion";
+import { FaqAccordion, type FaqItem } from "./__components/FaqAccordion";
 import { WhatsAppButton } from "@/components/WhatsAppButton";
 import { getSettings } from "@/lib/sanity/settings.query";
 import {
