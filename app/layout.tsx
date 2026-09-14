@@ -12,7 +12,7 @@ const description =
   "Vessel Perfumes. Perfumería en Paraguay. Fragancias seleccionadas con una experiencia de compra cuidada.";
 
 const siteUrl = new URL(
-  process.env.NEXT_PUBLIC_SITE_URL ?? "https://vesselperfumes.com"
+  process.env.NEXT_PUBLIC_SITE_URL ?? "https://vessel.com.py"
 );
 
 export const metadata: Metadata = {
