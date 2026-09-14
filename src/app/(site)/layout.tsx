@@ -6,7 +6,7 @@ import { Footer } from "@/components/layout/Footer";
 import { Header } from "@/components/layout/Header";
 import { WhatsAppStickyBar } from "@/components/layout/WhatsAppStickyBar";
 import { getSettings } from "@/lib/sanity/settings.query";
-import { getSiteUrl } from "@/lib/site";
+import { getSiteUrl, isStagingSite } from "@/lib/site";
 
 // Next.js exige que `revalidate` sea un literal (no acepta una referencia a
 // una constante del modulo): 3600s = 1 hora, valor razonable para el MVP.
@@ -24,13 +24,14 @@ export const metadata: Metadata = {
     template: "%s | Vessel Perfumes",
   },
   description,
+  robots: isStagingSite() ? { index: false, follow: false } : undefined,
   openGraph: {
     title: "Vessel Perfumes",
     description,
     url: siteUrl,
     type: "website",
     locale: "es_PY",
-    images: ["/og.webp"],
+    images: ["/og.png"],
   },
 };
 

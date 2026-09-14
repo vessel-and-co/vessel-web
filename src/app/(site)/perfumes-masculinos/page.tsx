@@ -17,7 +17,7 @@ export function generateMetadata(): Metadata {
     openGraph: {
       title: content.title,
       description: content.metaDescription,
-      images: ["/og.webp"],
+      images: ["/og.png"],
     },
   };
 }

@@ -78,7 +78,7 @@ export async function generateMetadata({
         .height(OG_IMAGE_HEIGHT)
         .fit("crop")
         .url()
-    : "/og.webp";
+    : "/og.png";
 
   return {
     title,
