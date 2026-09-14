@@ -214,9 +214,12 @@ export default async function ProductPage({ params }: ProductPageProps) {
           />
 
           <div className="mt-8 lg:mt-0">
-            <p className="text-xs tracking-[0.14em] text-ink-3 uppercase">
+            <Link
+              href={`/marcas/${product.brand.slug.current}`}
+              className="text-xs tracking-[0.14em] text-ink-3 uppercase hover:text-ink-2"
+            >
               {product.brand.name}
-            </p>
+            </Link>
             <h1 className="mt-1.5 font-serif text-[34px] leading-[1.05] font-normal text-brand-green lg:text-[44px]">
               {product.name}
             </h1>
